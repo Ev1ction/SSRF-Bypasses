@@ -19,9 +19,14 @@ Decimal IP wizardry in `SSRF` refers to a technique where attackers leverage dec
 
 # Where to look
 there is amazing resources to look for and learn from such as
-book.cipherops.tech
-highon.coffee
-book.hacktricks.xyz
+
+`book.cipherops.tech`
+
+`highon.coffee`
+
+`book.hacktricks.xyz`
+
+
 and a lot more 
 
 
